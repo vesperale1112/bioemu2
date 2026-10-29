@@ -1,0 +1,45 @@
+#!/bin/bash
+#PBS -N bioemu2_rna_eval
+#PBS -l walltime=06:00:00
+#PBS -l select=1:ncpus=8:mpiprocs=1:ompthreads=4:ngpus=1:mem=120gb
+#PBS -j oe
+#PBS -k oed
+#PBS -o /scratch/csiv212/
+set -euo pipefail
+
+BIOEMU_PROJECT="${BIOEMU_PROJECT:-/nfs/home/svu/csiv212/projects/bioemu2}"
+RNA_PROJECT="${RNA_PROJECT:-/nfs/home/svu/csiv212/projects/RNAConformer}"
+BIOEMU_WORK="${BIOEMU_WORK:-/scratch/csiv212/rnaconformers/bioemu2_rna_20261029}"
+BIOEMU_PYTHON="${BIOEMU_PYTHON:-/nfs/home/svu/csiv212/opt/miniforge3/envs/bioemu2/bin/python}"
+BIOEMU_JOB="${PBS_JOBID:?Submit this script with qsub}"
+BIOEMU_RUNTIME="$BIOEMU_WORK/runtime/$BIOEMU_JOB"
+mkdir -p "$BIOEMU_RUNTIME" "$BIOEMU_WORK/runs"
+exec > "$BIOEMU_RUNTIME/run.log" 2>&1
+export PYTHONPATH="$BIOEMU_PROJECT/src${PYTHONPATH:+:$PYTHONPATH}"
+export PYTHONDONTWRITEBYTECODE=1
+export OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4
+export NUMBA_CACHE_DIR="$BIOEMU_RUNTIME/numba"
+export TRITON_CACHE_DIR="$BIOEMU_RUNTIME/triton"
+export XDG_CACHE_HOME="$BIOEMU_RUNTIME/xdg"
+export BIOEMU2_CCD_CACHE="$BIOEMU_WORK/ccd"
+export BIOEMU2_TEMPLATE_CACHE="$BIOEMU_WORK/templates"
+export BIOEMU2_MSA_CACHE="$BIOEMU_WORK/msa"
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+
+BIOEMU_ARGS=()
+if [[ "${BIOEMU_MODE:-full}" == smoke ]]; then
+  BIOEMU_ARGS+=(--max-windows 1 --max-targets 1 --steps 20 --samples-per-seed 1 --seeds 2026 --batch-size 1)
+elif [[ "${BIOEMU_MODE:-full}" != full ]]; then
+  echo "Unknown BIOEMU_MODE: ${BIOEMU_MODE}" >&2
+  exit 2
+fi
+echo "job=$BIOEMU_JOB host=$(hostname) mode=${BIOEMU_MODE:-full}"
+echo "project_git=$(git -C "$BIOEMU_PROJECT" rev-parse HEAD)"
+"$BIOEMU_PYTHON" -c 'import torch; assert torch.cuda.device_count() == 1; print("GPU:", torch.cuda.get_device_name(0))'
+"$BIOEMU_PYTHON" -u "$BIOEMU_PROJECT/examples/evaluate_rna_temporal_bioemu2.py" \
+  --windows "$RNA_PROJECT/docs/experiments/flow_structure_20261029/evaluation_windows.csv" \
+  --manifest /scratch/projects/CFP04/CFP04-CF-042/xiran/pairformer_embedding/manifests/trajectory_manifest.jsonl \
+  --archive-root /scratch/projects/CFP04/CFP04-CF-042/xiran/data/rna_trajectory \
+  --checkpoint "$BIOEMU_WORK/model/checkpoint.ckpt" \
+  --usalign /nfs/home/svu/csiv212/projects/USalign \
+  --output "$BIOEMU_WORK/runs/$BIOEMU_JOB" "${BIOEMU_ARGS[@]}"

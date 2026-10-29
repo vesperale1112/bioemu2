@@ -1,0 +1,20 @@
+#!/bin/bash
+#PBS -N bioemu2_rna_compare
+#PBS -l walltime=01:00:00
+#PBS -l select=1:ncpus=4:mpiprocs=1:mem=32gb
+#PBS -j oe
+#PBS -k oed
+#PBS -o /scratch/csiv212/
+set -euo pipefail
+
+BIOEMU_PROJECT="${BIOEMU_PROJECT:-/nfs/home/svu/csiv212/projects/bioemu2}"
+BIOEMU_WORK="${BIOEMU_WORK:-/scratch/csiv212/rnaconformers/bioemu2_rna_20261029}"
+BIOEMU_RUN="${BIOEMU_RUN:?Set BIOEMU_RUN to the completed BioEmu2 run directory}"
+RNA_RESULTS="${RNA_RESULTS:-/scratch/csiv212/rnaconformers/flow_structure_t5/evaluation_2000/1507016.stdct-mgmt-02}"
+BIOEMU_RUNTIME="$BIOEMU_WORK/runtime/${PBS_JOBID:?Submit with qsub}"
+mkdir -p "$BIOEMU_RUNTIME"
+exec > "$BIOEMU_RUNTIME/compare.log" 2>&1
+echo "job=$PBS_JOBID host=$(hostname)"
+python3 -u "$BIOEMU_PROJECT/examples/compare_rna_temporal_bioemu2.py" \
+  --bioemu-results "$BIOEMU_RUN" --rna-results "$RNA_RESULTS" \
+  --usalign /nfs/home/svu/csiv212/projects/USalign --output "$BIOEMU_RUN/comparison"
