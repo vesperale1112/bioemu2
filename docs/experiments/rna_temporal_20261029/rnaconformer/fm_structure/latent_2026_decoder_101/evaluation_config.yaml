@@ -1,0 +1,125 @@
+asset_root: /nfs/home/svu/csiv212/projects/RNAConformer
+checkpoint_path: /scratch/projects/CFP04/CFP04-CF-042/xiran/rna_finetune/checkpoints/69999_ema_0.999.pt
+data:
+  batch_size: 1
+  include_partial_windows: false
+  max_tokens: 900
+  min_frames: 5
+  min_tokens: 50
+  mixed_mask_strategies:
+  - first_only
+  - endpoints
+  mixed_mask_weights:
+  - 1.0
+  - 1.0
+  num_workers: 0
+  pin_memory: true
+  train_mask_strategy: first_only
+  validation_fraction: 0.1
+  validation_mask_strategy: first_only
+  window_size: 5
+  window_stride: 1
+device: cuda
+embedding_output_root: /scratch/projects/CFP04/CFP04-CF-042/xiran/pairformer_embedding
+embedding_run_dir: /scratch/projects/CFP04/CFP04-CF-042/xiran/pairformer_embedding/embeddings/69999_ema_0.999_ncycle4_bf16_native
+evaluation:
+  archive_root: /scratch/projects/CFP04/CFP04-CF-042/xiran/data/rna_trajectory
+  diffusion_sample_chunk_size: 1
+  diffusion_seed: 101
+  latent_samples: 2
+  latent_seed: 2026
+  max_windows: 10
+  n_sample: 1
+  n_step: 200
+  output_dir: /scratch/csiv212/rnaconformers/flow_structure_t5/evaluation_2000/1507016.stdct-mgmt-02/fm_structure/latent_2026_decoder_101
+  reuse_target_predictions: false
+  rna_ids_path: /scratch/csiv212/rnaconformers/flow_structure_t5/evaluation_2000/1507016.stdct-mgmt-02/fm_structure/latent_2026_decoder_101/evaluation_rna_ids.txt
+  target_metrics_path: /nfs/home/svu/csiv212/projects/RNAConformer/docs/experiments/flow_structure_20261029/evaluation_windows.csv
+  temporal_checkpoint_path: /scratch/csiv212/rnaconformers/flow_structure_t5/from_1414232/1499506.stdct-mgmt-02/joint/flow_structure_joint_20261027_181712_684122289/checkpoints/step_2000.pt
+  usalign_binary: /nfs/home/svu/csiv212/projects/USalign
+feature_seed: 101
+flow:
+  frame_interval_ps: 100.0
+  sample_steps: 32
+  solver: euler
+  time_embedding_dim: 128
+  validation_sample_batches: 1
+  validation_seed: 2026
+loss:
+  known_consistency_weight: 0.01
+  lambda_s: 10.0
+  lambda_z: 1.0
+  pair_row_chunk_size: 32
+model:
+  attention_mode: global
+  blocks_per_ckpt: 1
+  c_s: 384
+  c_z: 128
+  max_frames: 5
+  n_blocks: 2
+  n_heads_s: 8
+  n_heads_z: 4
+  pair_chunk_size: 2048
+  spatial_frame_chunk_size: 1
+  spatial_mixer: triangle
+  spatial_single_n_heads: 16
+  time_conditioner: relative_bias
+  transition_expansion: 4
+  triangle_attention: cuequivariance
+  triangle_chunk_size: null
+  triangle_hidden_dim: 32
+  triangle_n_heads: 4
+  use_fine_grained_checkpoint: true
+model_dtype: bf16
+model_seed: 101
+n_cycle: 4
+normalization:
+  frames_per_rna: 16
+  mode: channel
+  pairs_per_frame: 4096
+  stats_path: null
+  std_floor: 0.001
+objective: flow_matching
+output_dir: /scratch/csiv212/rnaconformers/flow_structure_t5/from_1414232/1499506.stdct-mgmt-02/joint
+project: RNAConformers
+reference_mode: none
+run_name: flow_structure_joint
+seed: 101
+structure:
+  archive_root: /scratch/projects/CFP04/CFP04-CF-042/xiran/data/rna_trajectory
+  calibration_path: /scratch/csiv212/rnaconformers/flow_structure_t5/from_1414232/1499506.stdct-mgmt-02/calibration/calibration.json
+  checkpointing: true
+  chunk_size: 64
+  decoder_checkpoint: /scratch/projects/CFP04/CFP04-CF-042/xiran/rna_finetune/checkpoints/69999_ema_0.999.pt
+  enabled: true
+  loss_row_chunk: 128
+  max_weight: 100.0
+  min_atom_coverage: 0.95
+  min_gradient_norm: 1.0e-08
+  seed: 3107
+  tau_max: 0.9
+  tau_min: 0.5
+  topology_cache_size: 1
+  warmup_steps: 100
+  weight: 2.2682349626549794
+train_rna_ids_path: null
+training:
+  adam_foreach: false
+  checkpoint_interval: 500
+  grad_clip_norm: 1.0
+  gradient_accumulation_steps: 1
+  learning_rate: 1.0e-05
+  load_params_only: true
+  log_interval: 10
+  max_steps: 2000
+  min_learning_rate: 2.0e-07
+  online_no_template_cache_size: 305
+  overfit_one_sample: false
+  resume_checkpoint_path: /scratch/csiv212/rnaconformers/temporal_flow/flow_matching/training/first_only/temporal_first_only_1414232.stdct-mgmt-02_20260930_113150_289746077/checkpoints/step_50000.pt
+  validation_batches: 100
+  validation_interval: 500
+  warmup_steps: 100
+  weight_decay: 0.01
+trajectory_manifest_path: /scratch/projects/CFP04/CFP04-CF-042/xiran/pairformer_embedding/manifests/trajectory_manifest.jsonl
+use_wandb: true
+validation_rna_ids_path: null

@@ -1,0 +1,223 @@
+{
+  "windows": [
+    {
+      "rna_id": "3E5C_1_A_decoys",
+      "n_tokens": 52,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sequence": "UUCCCGAAAGGAUGGCGGAAACGCCAGAUGCCUUGUAACCGAAAGGGGGAAU",
+      "times_ps": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0
+      ],
+      "terminal_ccd": "URI",
+      "heavy_atoms": 1120
+    },
+    {
+      "rna_id": "3OWI_1_A_decoys",
+      "n_tokens": 86,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sequence": "GCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGU",
+      "times_ps": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0
+      ],
+      "terminal_ccd": "GMP",
+      "heavy_atoms": 1852
+    },
+    {
+      "rna_id": "4JF2_1_A_decoys",
+      "n_tokens": 76,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sequence": "GAACCGCGAAAGCGGUUCCACGACGAUACUUAUUUCCUUUGAUCGUCGUUAUUACUGGCUUCGGCCACAAAGGAGA",
+      "times_ps": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0
+      ],
+      "terminal_ccd": "GMP",
+      "heavy_atoms": 1609
+    },
+    {
+      "rna_id": "5C7W_C_decoys",
+      "n_tokens": 67,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sequence": "GGAGAUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUAUCUCC",
+      "times_ps": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0
+      ],
+      "terminal_ccd": "GMP",
+      "heavy_atoms": 1422
+    },
+    {
+      "rna_id": "6R47_A_decoys",
+      "n_tokens": 50,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sequence": "GGCCGUUCGGGCGGCCAUAAACAGCCCUCAGACCCGAAGCGUGGCGUUCC",
+      "times_ps": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0
+      ],
+      "terminal_ccd": "GMP",
+      "heavy_atoms": 1063
+    },
+    {
+      "rna_id": "6WLQ_3_A_decoys",
+      "n_tokens": 119,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sequence": "GGUCAUGAGUGCCAGCGUCAAGCCCCGGCUUGCUGGCCGGCAACCCUCCAACCGCGGUGGGGUGCCCCGGGUGAUGACCAGGUUGAGUAGCCGUGACGGCUACGCGGCAAGCGCGGGUC",
+      "times_ps": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0
+      ],
+      "terminal_ccd": "GMP",
+      "heavy_atoms": 2548
+    },
+    {
+      "rna_id": "7UR5_A_decoys",
+      "n_tokens": 90,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sequence": "GGAGGGGAACUUCUAUCUGGUGAUAGACGGGAACUCUAAAUUCCUUGAAAUGCCUCGCCGCAUUGGGUUCGAUUCCCUUCCCCUCCGCCA",
+      "times_ps": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0
+      ],
+      "terminal_ccd": "GMP",
+      "heavy_atoms": 1899
+    },
+    {
+      "rna_id": "8HBA_A_decoys",
+      "n_tokens": 56,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sequence": "CGCGGCGUUGCGUCCGAAAGUCUAAACAGACACGGCCGCUUAAAAACAAAAGGAGA",
+      "times_ps": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0
+      ],
+      "terminal_ccd": "CTN",
+      "heavy_atoms": 1202
+    },
+    {
+      "rna_id": "8QO5_4_A_decoys",
+      "n_tokens": 145,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sequence": "UCGUUGACAGGACACGAGUAACUCGUCUAUCUUCUGCAGGCUGCUUACGGUUUCGUCCGUGUUGCAGCCGAUCAUCAGCACAUCUAGGUUUCGUCCGGGUGUGACCGAAAGGUAAGAUGGAGAGCCUUGUCCCUGGUUUCAACGA",
+      "times_ps": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0
+      ],
+      "terminal_ccd": "URI",
+      "heavy_atoms": 3075
+    },
+    {
+      "rna_id": "8UO6_1_B_decoys",
+      "n_tokens": 134,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sequence": "GCCCGGAUAGCUCAGUCGGUAGAGCAGCGGGCACUAUGGGCGCAGUGUCAAUGGACGCUGACGGUACAGGCCAGACAAUUAUUGUCUGGUAUAGUGCCCGCGGGUCCAGGGUUCAAGUCCCUGUUCGGGCGCCA",
+      "times_ps": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0
+      ],
+      "terminal_ccd": "GMP",
+      "heavy_atoms": 2867
+    }
+  ],
+  "steps": 200,
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "samples_per_seed": 2,
+  "note": "Independent endpoints from the same true first frame; short lags are outside the recommended 1\u20131000 ns.",
+  "terminal": "5-prime unphosphorylated nucleoside specified with its CCD; first residue uses modified-residue tokenization."
+}

@@ -1,0 +1,1483 @@
+{
+  "config": {
+    "max_windows": 10,
+    "latent_samples": 2,
+    "decoder_samples": 1,
+    "flow_steps": 32,
+    "decoder_steps": 200,
+    "latent_seeds": [
+      2026,
+      2027
+    ],
+    "decoder_seeds": [
+      101,
+      102
+    ],
+    "coverage_rmsd_angstrom": 2.0
+  },
+  "checkpoints": [
+    "/scratch/csiv212/rnaconformers/temporal_flow/flow_matching/training/first_only/temporal_first_only_1414232.stdct-mgmt-02_20260930_113150_289746077/checkpoints/step_50000.pt",
+    "/scratch/csiv212/rnaconformers/flow_structure_t5/from_1414232/1499506.stdct-mgmt-02/joint/flow_structure_joint_20261027_181712_684122289/checkpoints/step_2000.pt"
+  ],
+  "methods": {
+    "pure_fm": {
+      "quality_by_seed": [
+        {
+          "latent_seed": 2026,
+          "decoder_seed": 101,
+          "axis": "latent",
+          "quality": {
+            "rna_count": 10,
+            "row_count": 80,
+            "per_rna": [
+              {
+                "rna_id": "3E5C_1_A_decoys",
+                "tm_reference_normalized": 0.326875,
+                "rmsd": 3.5675
+              },
+              {
+                "rna_id": "3OWI_1_A_decoys",
+                "tm_reference_normalized": 0.4048,
+                "rmsd": 3.79625
+              },
+              {
+                "rna_id": "4JF2_1_A_decoys",
+                "tm_reference_normalized": 0.517325,
+                "rmsd": 3.3075
+              },
+              {
+                "rna_id": "5C7W_C_decoys",
+                "tm_reference_normalized": 0.3234125,
+                "rmsd": 4.40125
+              },
+              {
+                "rna_id": "6R47_A_decoys",
+                "tm_reference_normalized": 0.6477375,
+                "rmsd": 1.78375
+              },
+              {
+                "rna_id": "6WLQ_3_A_decoys",
+                "tm_reference_normalized": 0.45842499999999997,
+                "rmsd": 4.5649999999999995
+              },
+              {
+                "rna_id": "7UR5_A_decoys",
+                "tm_reference_normalized": 0.4045,
+                "rmsd": 4.4275
+              },
+              {
+                "rna_id": "8HBA_A_decoys",
+                "tm_reference_normalized": 0.541175,
+                "rmsd": 3.0125
+              },
+              {
+                "rna_id": "8QO5_4_A_decoys",
+                "tm_reference_normalized": 0.3637625,
+                "rmsd": 5.48625
+              },
+              {
+                "rna_id": "8UO6_1_B_decoys",
+                "tm_reference_normalized": 0.4276625,
+                "rmsd": 4.69125
+              }
+            ],
+            "mean_tm_reference_normalized": 0.4415675,
+            "mean_rmsd": 3.903875
+          }
+        },
+        {
+          "latent_seed": 2027,
+          "decoder_seed": 101,
+          "axis": "latent",
+          "quality": {
+            "rna_count": 10,
+            "row_count": 80,
+            "per_rna": [
+              {
+                "rna_id": "3E5C_1_A_decoys",
+                "tm_reference_normalized": 0.3297375,
+                "rmsd": 3.55
+              },
+              {
+                "rna_id": "3OWI_1_A_decoys",
+                "tm_reference_normalized": 0.422325,
+                "rmsd": 3.58125
+              },
+              {
+                "rna_id": "4JF2_1_A_decoys",
+                "tm_reference_normalized": 0.5214,
+                "rmsd": 3.30375
+              },
+              {
+                "rna_id": "5C7W_C_decoys",
+                "tm_reference_normalized": 0.3193125,
+                "rmsd": 4.2837499999999995
+              },
+              {
+                "rna_id": "6R47_A_decoys",
+                "tm_reference_normalized": 0.6547375,
+                "rmsd": 1.76625
+              },
+              {
+                "rna_id": "6WLQ_3_A_decoys",
+                "tm_reference_normalized": 0.460725,
+                "rmsd": 4.56
+              },
+              {
+                "rna_id": "7UR5_A_decoys",
+                "tm_reference_normalized": 0.4107375,
+                "rmsd": 4.32625
+              },
+              {
+                "rna_id": "8HBA_A_decoys",
+                "tm_reference_normalized": 0.5368375,
+                "rmsd": 2.9575
+              },
+              {
+                "rna_id": "8QO5_4_A_decoys",
+                "tm_reference_normalized": 0.3605,
+                "rmsd": 5.59875
+              },
+              {
+                "rna_id": "8UO6_1_B_decoys",
+                "tm_reference_normalized": 0.4264,
+                "rmsd": 4.99625
+              }
+            ],
+            "mean_tm_reference_normalized": 0.44427125,
+            "mean_rmsd": 3.892375
+          }
+        },
+        {
+          "latent_seed": 2026,
+          "decoder_seed": 102,
+          "axis": "decoder",
+          "quality": {
+            "rna_count": 10,
+            "row_count": 80,
+            "per_rna": [
+              {
+                "rna_id": "3E5C_1_A_decoys",
+                "tm_reference_normalized": 0.3280875,
+                "rmsd": 3.51875
+              },
+              {
+                "rna_id": "3OWI_1_A_decoys",
+                "tm_reference_normalized": 0.4068,
+                "rmsd": 3.805
+              },
+              {
+                "rna_id": "4JF2_1_A_decoys",
+                "tm_reference_normalized": 0.5205625,
+                "rmsd": 3.3
+              },
+              {
+                "rna_id": "5C7W_C_decoys",
+                "tm_reference_normalized": 0.3254875,
+                "rmsd": 4.39875
+              },
+              {
+                "rna_id": "6R47_A_decoys",
+                "tm_reference_normalized": 0.6481625,
+                "rmsd": 1.82625
+              },
+              {
+                "rna_id": "6WLQ_3_A_decoys",
+                "tm_reference_normalized": 0.4605125,
+                "rmsd": 4.53625
+              },
+              {
+                "rna_id": "7UR5_A_decoys",
+                "tm_reference_normalized": 0.40645,
+                "rmsd": 4.4125
+              },
+              {
+                "rna_id": "8HBA_A_decoys",
+                "tm_reference_normalized": 0.540925,
+                "rmsd": 2.925
+              },
+              {
+                "rna_id": "8QO5_4_A_decoys",
+                "tm_reference_normalized": 0.35905,
+                "rmsd": 5.55125
+              },
+              {
+                "rna_id": "8UO6_1_B_decoys",
+                "tm_reference_normalized": 0.4289125,
+                "rmsd": 4.8475
+              }
+            ],
+            "mean_tm_reference_normalized": 0.44249499999999997,
+            "mean_rmsd": 3.9121249999999996
+          }
+        }
+      ],
+      "coverage_by_seed": [
+        {
+          "latent_seed": 2026,
+          "decoder_seed": 101,
+          "coverage": {
+            "rna_count": 10,
+            "row_count": 40,
+            "per_rna": [
+              {
+                "rna_id": "3E5C_1_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 3.3375
+              },
+              {
+                "rna_id": "3OWI_1_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 3.5225
+              },
+              {
+                "rna_id": "4JF2_1_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 3.0925000000000002
+              },
+              {
+                "rna_id": "5C7W_C_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.0975
+              },
+              {
+                "rna_id": "6R47_A_decoys",
+                "covered": 0.75,
+                "nearest_rmsd": 1.5775
+              },
+              {
+                "rna_id": "6WLQ_3_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.38
+              },
+              {
+                "rna_id": "7UR5_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.1775
+              },
+              {
+                "rna_id": "8HBA_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 2.8225000000000002
+              },
+              {
+                "rna_id": "8QO5_4_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 5.2325
+              },
+              {
+                "rna_id": "8UO6_1_B_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.49
+              }
+            ],
+            "mean_covered": 0.075,
+            "mean_nearest_rmsd": 3.6730000000000005
+          },
+          "precision": {
+            "rna_count": 10,
+            "row_count": 80,
+            "per_rna": [
+              {
+                "rna_id": "3E5C_1_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 2.99375
+              },
+              {
+                "rna_id": "3OWI_1_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 3.52625
+              },
+              {
+                "rna_id": "4JF2_1_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 2.985
+              },
+              {
+                "rna_id": "5C7W_C_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 4.11875
+              },
+              {
+                "rna_id": "6R47_A_decoys",
+                "within_reference_set": 1.0,
+                "nearest_rmsd": 1.46375
+              },
+              {
+                "rna_id": "6WLQ_3_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 4.215
+              },
+              {
+                "rna_id": "7UR5_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 3.5825
+              },
+              {
+                "rna_id": "8HBA_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 2.39125
+              },
+              {
+                "rna_id": "8QO5_4_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 5.279999999999999
+              },
+              {
+                "rna_id": "8UO6_1_B_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 4.23875
+              }
+            ],
+            "mean_within_reference_set": 0.1,
+            "mean_nearest_rmsd": 3.4795000000000003
+          }
+        },
+        {
+          "latent_seed": 2027,
+          "decoder_seed": 101,
+          "coverage": {
+            "rna_count": 10,
+            "row_count": 40,
+            "per_rna": [
+              {
+                "rna_id": "3E5C_1_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 3.3575
+              },
+              {
+                "rna_id": "3OWI_1_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 3.41
+              },
+              {
+                "rna_id": "4JF2_1_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 3.14
+              },
+              {
+                "rna_id": "5C7W_C_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.09
+              },
+              {
+                "rna_id": "6R47_A_decoys",
+                "covered": 0.75,
+                "nearest_rmsd": 1.5925
+              },
+              {
+                "rna_id": "6WLQ_3_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.345
+              },
+              {
+                "rna_id": "7UR5_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.1825
+              },
+              {
+                "rna_id": "8HBA_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 2.83
+              },
+              {
+                "rna_id": "8QO5_4_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 5.375
+              },
+              {
+                "rna_id": "8UO6_1_B_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.422499999999999
+              }
+            ],
+            "mean_covered": 0.075,
+            "mean_nearest_rmsd": 3.6744999999999997
+          },
+          "precision": {
+            "rna_count": 10,
+            "row_count": 80,
+            "per_rna": [
+              {
+                "rna_id": "3E5C_1_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 3.16375
+              },
+              {
+                "rna_id": "3OWI_1_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 3.355
+              },
+              {
+                "rna_id": "4JF2_1_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 2.99875
+              },
+              {
+                "rna_id": "5C7W_C_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 4.04125
+              },
+              {
+                "rna_id": "6R47_A_decoys",
+                "within_reference_set": 1.0,
+                "nearest_rmsd": 1.3125
+              },
+              {
+                "rna_id": "6WLQ_3_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 4.18375
+              },
+              {
+                "rna_id": "7UR5_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 3.58
+              },
+              {
+                "rna_id": "8HBA_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 2.4975
+              },
+              {
+                "rna_id": "8QO5_4_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 5.28875
+              },
+              {
+                "rna_id": "8UO6_1_B_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 4.24125
+              }
+            ],
+            "mean_within_reference_set": 0.1,
+            "mean_nearest_rmsd": 3.46625
+          }
+        },
+        {
+          "latent_seed": 2026,
+          "decoder_seed": 102,
+          "coverage": {
+            "rna_count": 10,
+            "row_count": 40,
+            "per_rna": [
+              {
+                "rna_id": "3E5C_1_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 3.295
+              },
+              {
+                "rna_id": "3OWI_1_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 3.55
+              },
+              {
+                "rna_id": "4JF2_1_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 3.1075
+              },
+              {
+                "rna_id": "5C7W_C_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.165
+              },
+              {
+                "rna_id": "6R47_A_decoys",
+                "covered": 0.75,
+                "nearest_rmsd": 1.605
+              },
+              {
+                "rna_id": "6WLQ_3_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.425
+              },
+              {
+                "rna_id": "7UR5_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.1975
+              },
+              {
+                "rna_id": "8HBA_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 2.725
+              },
+              {
+                "rna_id": "8QO5_4_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 5.225
+              },
+              {
+                "rna_id": "8UO6_1_B_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.6125
+              }
+            ],
+            "mean_covered": 0.075,
+            "mean_nearest_rmsd": 3.69075
+          },
+          "precision": {
+            "rna_count": 10,
+            "row_count": 80,
+            "per_rna": [
+              {
+                "rna_id": "3E5C_1_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 3.0275
+              },
+              {
+                "rna_id": "3OWI_1_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 3.4975
+              },
+              {
+                "rna_id": "4JF2_1_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 2.99375
+              },
+              {
+                "rna_id": "5C7W_C_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 4.15
+              },
+              {
+                "rna_id": "6R47_A_decoys",
+                "within_reference_set": 1.0,
+                "nearest_rmsd": 1.46875
+              },
+              {
+                "rna_id": "6WLQ_3_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 4.2425
+              },
+              {
+                "rna_id": "7UR5_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 3.62125
+              },
+              {
+                "rna_id": "8HBA_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 2.4325
+              },
+              {
+                "rna_id": "8QO5_4_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 5.2375
+              },
+              {
+                "rna_id": "8UO6_1_B_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 4.19375
+              }
+            ],
+            "mean_within_reference_set": 0.1,
+            "mean_nearest_rmsd": 3.4865000000000004
+          }
+        }
+      ],
+      "diversity": {
+        "latent": {
+          "rna_count": 10,
+          "row_count": 280,
+          "per_rna": [
+            {
+              "rna_id": "3E5C_1_A_decoys",
+              "rmsd": 0.7225
+            },
+            {
+              "rna_id": "3OWI_1_A_decoys",
+              "rmsd": 0.9882142857142858
+            },
+            {
+              "rna_id": "4JF2_1_A_decoys",
+              "rmsd": 0.8671428571428572
+            },
+            {
+              "rna_id": "5C7W_C_decoys",
+              "rmsd": 0.5978571428571428
+            },
+            {
+              "rna_id": "6R47_A_decoys",
+              "rmsd": 1.1032142857142857
+            },
+            {
+              "rna_id": "6WLQ_3_A_decoys",
+              "rmsd": 1.1232142857142857
+            },
+            {
+              "rna_id": "7UR5_A_decoys",
+              "rmsd": 1.185
+            },
+            {
+              "rna_id": "8HBA_A_decoys",
+              "rmsd": 0.7007142857142857
+            },
+            {
+              "rna_id": "8QO5_4_A_decoys",
+              "rmsd": 1.6885714285714286
+            },
+            {
+              "rna_id": "8UO6_1_B_decoys",
+              "rmsd": 1.2932142857142856
+            }
+          ],
+          "mean_rmsd": 1.0269642857142858
+        },
+        "decoder": {
+          "rna_count": 10,
+          "row_count": 80,
+          "per_rna": [
+            {
+              "rna_id": "3E5C_1_A_decoys",
+              "rmsd": 0.09375
+            },
+            {
+              "rna_id": "3OWI_1_A_decoys",
+              "rmsd": 0.22
+            },
+            {
+              "rna_id": "4JF2_1_A_decoys",
+              "rmsd": 0.175
+            },
+            {
+              "rna_id": "5C7W_C_decoys",
+              "rmsd": 0.11125
+            },
+            {
+              "rna_id": "6R47_A_decoys",
+              "rmsd": 0.16
+            },
+            {
+              "rna_id": "6WLQ_3_A_decoys",
+              "rmsd": 0.235
+            },
+            {
+              "rna_id": "7UR5_A_decoys",
+              "rmsd": 0.265
+            },
+            {
+              "rna_id": "8HBA_A_decoys",
+              "rmsd": 0.15875
+            },
+            {
+              "rna_id": "8QO5_4_A_decoys",
+              "rmsd": 0.55
+            },
+            {
+              "rna_id": "8UO6_1_B_decoys",
+              "rmsd": 0.3175
+            }
+          ],
+          "mean_rmsd": 0.228625
+        },
+        "both": {
+          "rna_count": 10,
+          "row_count": 240,
+          "per_rna": [
+            {
+              "rna_id": "3E5C_1_A_decoys",
+              "rmsd": 0.7133333333333334
+            },
+            {
+              "rna_id": "3OWI_1_A_decoys",
+              "rmsd": 1.0250000000000001
+            },
+            {
+              "rna_id": "4JF2_1_A_decoys",
+              "rmsd": 0.8829166666666667
+            },
+            {
+              "rna_id": "5C7W_C_decoys",
+              "rmsd": 0.6041666666666666
+            },
+            {
+              "rna_id": "6R47_A_decoys",
+              "rmsd": 1.08625
+            },
+            {
+              "rna_id": "6WLQ_3_A_decoys",
+              "rmsd": 1.1433333333333333
+            },
+            {
+              "rna_id": "7UR5_A_decoys",
+              "rmsd": 1.2370833333333333
+            },
+            {
+              "rna_id": "8HBA_A_decoys",
+              "rmsd": 0.7004166666666666
+            },
+            {
+              "rna_id": "8QO5_4_A_decoys",
+              "rmsd": 1.7025
+            },
+            {
+              "rna_id": "8UO6_1_B_decoys",
+              "rmsd": 1.2975
+            }
+          ],
+          "mean_rmsd": 1.03925
+        }
+      }
+    },
+    "fm_structure": {
+      "quality_by_seed": [
+        {
+          "latent_seed": 2026,
+          "decoder_seed": 101,
+          "axis": "latent",
+          "quality": {
+            "rna_count": 10,
+            "row_count": 80,
+            "per_rna": [
+              {
+                "rna_id": "3E5C_1_A_decoys",
+                "tm_reference_normalized": 0.3226625,
+                "rmsd": 3.53
+              },
+              {
+                "rna_id": "3OWI_1_A_decoys",
+                "tm_reference_normalized": 0.4020125,
+                "rmsd": 3.8525
+              },
+              {
+                "rna_id": "4JF2_1_A_decoys",
+                "tm_reference_normalized": 0.51515,
+                "rmsd": 3.30375
+              },
+              {
+                "rna_id": "5C7W_C_decoys",
+                "tm_reference_normalized": 0.32761250000000003,
+                "rmsd": 4.43625
+              },
+              {
+                "rna_id": "6R47_A_decoys",
+                "tm_reference_normalized": 0.63915,
+                "rmsd": 1.86375
+              },
+              {
+                "rna_id": "6WLQ_3_A_decoys",
+                "tm_reference_normalized": 0.4546,
+                "rmsd": 4.63375
+              },
+              {
+                "rna_id": "7UR5_A_decoys",
+                "tm_reference_normalized": 0.401925,
+                "rmsd": 4.45
+              },
+              {
+                "rna_id": "8HBA_A_decoys",
+                "tm_reference_normalized": 0.54055,
+                "rmsd": 2.98625
+              },
+              {
+                "rna_id": "8QO5_4_A_decoys",
+                "tm_reference_normalized": 0.3615125,
+                "rmsd": 5.5475
+              },
+              {
+                "rna_id": "8UO6_1_B_decoys",
+                "tm_reference_normalized": 0.4254,
+                "rmsd": 4.74875
+              }
+            ],
+            "mean_tm_reference_normalized": 0.4390575,
+            "mean_rmsd": 3.93525
+          }
+        },
+        {
+          "latent_seed": 2027,
+          "decoder_seed": 101,
+          "axis": "latent",
+          "quality": {
+            "rna_count": 10,
+            "row_count": 80,
+            "per_rna": [
+              {
+                "rna_id": "3E5C_1_A_decoys",
+                "tm_reference_normalized": 0.32794999999999996,
+                "rmsd": 3.57625
+              },
+              {
+                "rna_id": "3OWI_1_A_decoys",
+                "tm_reference_normalized": 0.4210125,
+                "rmsd": 3.6575
+              },
+              {
+                "rna_id": "4JF2_1_A_decoys",
+                "tm_reference_normalized": 0.5171625,
+                "rmsd": 3.33375
+              },
+              {
+                "rna_id": "5C7W_C_decoys",
+                "tm_reference_normalized": 0.323425,
+                "rmsd": 4.34375
+              },
+              {
+                "rna_id": "6R47_A_decoys",
+                "tm_reference_normalized": 0.6521375,
+                "rmsd": 1.74
+              },
+              {
+                "rna_id": "6WLQ_3_A_decoys",
+                "tm_reference_normalized": 0.4588625,
+                "rmsd": 4.59375
+              },
+              {
+                "rna_id": "7UR5_A_decoys",
+                "tm_reference_normalized": 0.4123375,
+                "rmsd": 4.2775
+              },
+              {
+                "rna_id": "8HBA_A_decoys",
+                "tm_reference_normalized": 0.5354,
+                "rmsd": 2.97875
+              },
+              {
+                "rna_id": "8QO5_4_A_decoys",
+                "tm_reference_normalized": 0.35625,
+                "rmsd": 5.595
+              },
+              {
+                "rna_id": "8UO6_1_B_decoys",
+                "tm_reference_normalized": 0.4256625,
+                "rmsd": 4.8412500000000005
+              }
+            ],
+            "mean_tm_reference_normalized": 0.44302,
+            "mean_rmsd": 3.89375
+          }
+        },
+        {
+          "latent_seed": 2026,
+          "decoder_seed": 102,
+          "axis": "decoder",
+          "quality": {
+            "rna_count": 10,
+            "row_count": 80,
+            "per_rna": [
+              {
+                "rna_id": "3E5C_1_A_decoys",
+                "tm_reference_normalized": 0.3240625,
+                "rmsd": 3.505
+              },
+              {
+                "rna_id": "3OWI_1_A_decoys",
+                "tm_reference_normalized": 0.4041875,
+                "rmsd": 3.83875
+              },
+              {
+                "rna_id": "4JF2_1_A_decoys",
+                "tm_reference_normalized": 0.5178875000000001,
+                "rmsd": 3.3175
+              },
+              {
+                "rna_id": "5C7W_C_decoys",
+                "tm_reference_normalized": 0.32725,
+                "rmsd": 4.48125
+              },
+              {
+                "rna_id": "6R47_A_decoys",
+                "tm_reference_normalized": 0.6394375,
+                "rmsd": 1.91125
+              },
+              {
+                "rna_id": "6WLQ_3_A_decoys",
+                "tm_reference_normalized": 0.4558,
+                "rmsd": 4.52375
+              },
+              {
+                "rna_id": "7UR5_A_decoys",
+                "tm_reference_normalized": 0.4018,
+                "rmsd": 4.465
+              },
+              {
+                "rna_id": "8HBA_A_decoys",
+                "tm_reference_normalized": 0.5402875,
+                "rmsd": 2.99125
+              },
+              {
+                "rna_id": "8QO5_4_A_decoys",
+                "tm_reference_normalized": 0.3561875,
+                "rmsd": 5.5175
+              },
+              {
+                "rna_id": "8UO6_1_B_decoys",
+                "tm_reference_normalized": 0.4257875,
+                "rmsd": 4.8675
+              }
+            ],
+            "mean_tm_reference_normalized": 0.43926875,
+            "mean_rmsd": 3.9418750000000005
+          }
+        }
+      ],
+      "coverage_by_seed": [
+        {
+          "latent_seed": 2026,
+          "decoder_seed": 101,
+          "coverage": {
+            "rna_count": 10,
+            "row_count": 40,
+            "per_rna": [
+              {
+                "rna_id": "3E5C_1_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 3.3425000000000002
+              },
+              {
+                "rna_id": "3OWI_1_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 3.5625
+              },
+              {
+                "rna_id": "4JF2_1_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 3.0875
+              },
+              {
+                "rna_id": "5C7W_C_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.125
+              },
+              {
+                "rna_id": "6R47_A_decoys",
+                "covered": 0.75,
+                "nearest_rmsd": 1.615
+              },
+              {
+                "rna_id": "6WLQ_3_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.37
+              },
+              {
+                "rna_id": "7UR5_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.1899999999999995
+              },
+              {
+                "rna_id": "8HBA_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 2.7800000000000002
+              },
+              {
+                "rna_id": "8QO5_4_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 5.225
+              },
+              {
+                "rna_id": "8UO6_1_B_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.4775
+              }
+            ],
+            "mean_covered": 0.075,
+            "mean_nearest_rmsd": 3.6774999999999998
+          },
+          "precision": {
+            "rna_count": 10,
+            "row_count": 80,
+            "per_rna": [
+              {
+                "rna_id": "3E5C_1_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 2.99125
+              },
+              {
+                "rna_id": "3OWI_1_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 3.47625
+              },
+              {
+                "rna_id": "4JF2_1_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 2.9775
+              },
+              {
+                "rna_id": "5C7W_C_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 4.1
+              },
+              {
+                "rna_id": "6R47_A_decoys",
+                "within_reference_set": 1.0,
+                "nearest_rmsd": 1.50625
+              },
+              {
+                "rna_id": "6WLQ_3_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 4.28125
+              },
+              {
+                "rna_id": "7UR5_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 3.6825
+              },
+              {
+                "rna_id": "8HBA_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 2.40625
+              },
+              {
+                "rna_id": "8QO5_4_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 5.26875
+              },
+              {
+                "rna_id": "8UO6_1_B_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 4.20125
+              }
+            ],
+            "mean_within_reference_set": 0.1,
+            "mean_nearest_rmsd": 3.489125
+          }
+        },
+        {
+          "latent_seed": 2027,
+          "decoder_seed": 101,
+          "coverage": {
+            "rna_count": 10,
+            "row_count": 40,
+            "per_rna": [
+              {
+                "rna_id": "3E5C_1_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 3.375
+              },
+              {
+                "rna_id": "3OWI_1_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 3.3475
+              },
+              {
+                "rna_id": "4JF2_1_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 3.1550000000000002
+              },
+              {
+                "rna_id": "5C7W_C_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.0725
+              },
+              {
+                "rna_id": "6R47_A_decoys",
+                "covered": 0.75,
+                "nearest_rmsd": 1.6
+              },
+              {
+                "rna_id": "6WLQ_3_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.3825
+              },
+              {
+                "rna_id": "7UR5_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.0875
+              },
+              {
+                "rna_id": "8HBA_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 2.7925
+              },
+              {
+                "rna_id": "8QO5_4_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 5.37
+              },
+              {
+                "rna_id": "8UO6_1_B_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.390000000000001
+              }
+            ],
+            "mean_covered": 0.075,
+            "mean_nearest_rmsd": 3.6572500000000003
+          },
+          "precision": {
+            "rna_count": 10,
+            "row_count": 80,
+            "per_rna": [
+              {
+                "rna_id": "3E5C_1_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 3.2125
+              },
+              {
+                "rna_id": "3OWI_1_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 3.3112500000000002
+              },
+              {
+                "rna_id": "4JF2_1_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 2.98
+              },
+              {
+                "rna_id": "5C7W_C_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 4.0575
+              },
+              {
+                "rna_id": "6R47_A_decoys",
+                "within_reference_set": 1.0,
+                "nearest_rmsd": 1.33
+              },
+              {
+                "rna_id": "6WLQ_3_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 4.2175
+              },
+              {
+                "rna_id": "7UR5_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 3.60875
+              },
+              {
+                "rna_id": "8HBA_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 2.475
+              },
+              {
+                "rna_id": "8QO5_4_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 5.328749999999999
+              },
+              {
+                "rna_id": "8UO6_1_B_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 4.18375
+              }
+            ],
+            "mean_within_reference_set": 0.1,
+            "mean_nearest_rmsd": 3.4705
+          }
+        },
+        {
+          "latent_seed": 2026,
+          "decoder_seed": 102,
+          "coverage": {
+            "rna_count": 10,
+            "row_count": 40,
+            "per_rna": [
+              {
+                "rna_id": "3E5C_1_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 3.3
+              },
+              {
+                "rna_id": "3OWI_1_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 3.5324999999999998
+              },
+              {
+                "rna_id": "4JF2_1_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 3.13
+              },
+              {
+                "rna_id": "5C7W_C_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.0975
+              },
+              {
+                "rna_id": "6R47_A_decoys",
+                "covered": 0.75,
+                "nearest_rmsd": 1.6375
+              },
+              {
+                "rna_id": "6WLQ_3_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.3725
+              },
+              {
+                "rna_id": "7UR5_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.2025
+              },
+              {
+                "rna_id": "8HBA_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 2.7525
+              },
+              {
+                "rna_id": "8QO5_4_A_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 5.215
+              },
+              {
+                "rna_id": "8UO6_1_B_decoys",
+                "covered": 0.0,
+                "nearest_rmsd": 4.6375
+              }
+            ],
+            "mean_covered": 0.075,
+            "mean_nearest_rmsd": 3.68775
+          },
+          "precision": {
+            "rna_count": 10,
+            "row_count": 80,
+            "per_rna": [
+              {
+                "rna_id": "3E5C_1_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 3.03125
+              },
+              {
+                "rna_id": "3OWI_1_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 3.4725
+              },
+              {
+                "rna_id": "4JF2_1_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 2.95125
+              },
+              {
+                "rna_id": "5C7W_C_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 4.10625
+              },
+              {
+                "rna_id": "6R47_A_decoys",
+                "within_reference_set": 1.0,
+                "nearest_rmsd": 1.4875
+              },
+              {
+                "rna_id": "6WLQ_3_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 4.28125
+              },
+              {
+                "rna_id": "7UR5_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 3.6662500000000002
+              },
+              {
+                "rna_id": "8HBA_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 2.38125
+              },
+              {
+                "rna_id": "8QO5_4_A_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 5.1075
+              },
+              {
+                "rna_id": "8UO6_1_B_decoys",
+                "within_reference_set": 0.0,
+                "nearest_rmsd": 4.1775
+              }
+            ],
+            "mean_within_reference_set": 0.1,
+            "mean_nearest_rmsd": 3.46625
+          }
+        }
+      ],
+      "diversity": {
+        "latent": {
+          "rna_count": 10,
+          "row_count": 280,
+          "per_rna": [
+            {
+              "rna_id": "3E5C_1_A_decoys",
+              "rmsd": 0.8532142857142857
+            },
+            {
+              "rna_id": "3OWI_1_A_decoys",
+              "rmsd": 1.1467857142857143
+            },
+            {
+              "rna_id": "4JF2_1_A_decoys",
+              "rmsd": 1.032142857142857
+            },
+            {
+              "rna_id": "5C7W_C_decoys",
+              "rmsd": 0.7275
+            },
+            {
+              "rna_id": "6R47_A_decoys",
+              "rmsd": 1.2157142857142857
+            },
+            {
+              "rna_id": "6WLQ_3_A_decoys",
+              "rmsd": 1.2589285714285714
+            },
+            {
+              "rna_id": "7UR5_A_decoys",
+              "rmsd": 1.3235714285714286
+            },
+            {
+              "rna_id": "8HBA_A_decoys",
+              "rmsd": 0.8375
+            },
+            {
+              "rna_id": "8QO5_4_A_decoys",
+              "rmsd": 1.8364285714285715
+            },
+            {
+              "rna_id": "8UO6_1_B_decoys",
+              "rmsd": 1.4782142857142857
+            }
+          ],
+          "mean_rmsd": 1.171
+        },
+        "decoder": {
+          "rna_count": 10,
+          "row_count": 80,
+          "per_rna": [
+            {
+              "rna_id": "3E5C_1_A_decoys",
+              "rmsd": 0.1075
+            },
+            {
+              "rna_id": "3OWI_1_A_decoys",
+              "rmsd": 0.25875
+            },
+            {
+              "rna_id": "4JF2_1_A_decoys",
+              "rmsd": 0.195
+            },
+            {
+              "rna_id": "5C7W_C_decoys",
+              "rmsd": 0.14
+            },
+            {
+              "rna_id": "6R47_A_decoys",
+              "rmsd": 0.18625
+            },
+            {
+              "rna_id": "6WLQ_3_A_decoys",
+              "rmsd": 0.245
+            },
+            {
+              "rna_id": "7UR5_A_decoys",
+              "rmsd": 0.2575
+            },
+            {
+              "rna_id": "8HBA_A_decoys",
+              "rmsd": 0.17375000000000002
+            },
+            {
+              "rna_id": "8QO5_4_A_decoys",
+              "rmsd": 0.57125
+            },
+            {
+              "rna_id": "8UO6_1_B_decoys",
+              "rmsd": 0.3525
+            }
+          ],
+          "mean_rmsd": 0.24874999999999997
+        },
+        "both": {
+          "rna_count": 10,
+          "row_count": 240,
+          "per_rna": [
+            {
+              "rna_id": "3E5C_1_A_decoys",
+              "rmsd": 0.84625
+            },
+            {
+              "rna_id": "3OWI_1_A_decoys",
+              "rmsd": 1.1779166666666667
+            },
+            {
+              "rna_id": "4JF2_1_A_decoys",
+              "rmsd": 1.0416666666666667
+            },
+            {
+              "rna_id": "5C7W_C_decoys",
+              "rmsd": 0.7345833333333333
+            },
+            {
+              "rna_id": "6R47_A_decoys",
+              "rmsd": 1.2029166666666666
+            },
+            {
+              "rna_id": "6WLQ_3_A_decoys",
+              "rmsd": 1.2758333333333334
+            },
+            {
+              "rna_id": "7UR5_A_decoys",
+              "rmsd": 1.3308333333333333
+            },
+            {
+              "rna_id": "8HBA_A_decoys",
+              "rmsd": 0.8337500000000001
+            },
+            {
+              "rna_id": "8QO5_4_A_decoys",
+              "rmsd": 1.8529166666666665
+            },
+            {
+              "rna_id": "8UO6_1_B_decoys",
+              "rmsd": 1.4800000000000002
+            }
+          ],
+          "mean_rmsd": 1.1776666666666666
+        }
+      }
+    }
+  },
+  "paired_quality": {
+    "rna_count": 10,
+    "row_count": 240,
+    "per_rna": [
+      {
+        "rna_id": "3E5C_1_A_decoys",
+        "tm_gain": -0.0033416666666666755,
+        "rmsd_reduction": 0.008333333333333323
+      },
+      {
+        "rna_id": "3OWI_1_A_decoys",
+        "tm_gain": -0.002237500000000001,
+        "rmsd_reduction": -0.055416666666666635
+      },
+      {
+        "rna_id": "4JF2_1_A_decoys",
+        "tm_gain": -0.0030291666666666683,
+        "rmsd_reduction": -0.014583333333333337
+      },
+      {
+        "rna_id": "5C7W_C_decoys",
+        "tm_gain": 0.003358333333333338,
+        "rmsd_reduction": -0.059166666666666624
+      },
+      {
+        "rna_id": "6R47_A_decoys",
+        "tm_gain": -0.006637499999999991,
+        "rmsd_reduction": -0.04624999999999996
+      },
+      {
+        "rna_id": "6WLQ_3_A_decoys",
+        "tm_gain": -0.0034666666666666643,
+        "rmsd_reduction": -0.030000000000000065
+      },
+      {
+        "rna_id": "7UR5_A_decoys",
+        "tm_gain": -0.0018749999999999971,
+        "rmsd_reduction": -0.008749999999999999
+      },
+      {
+        "rna_id": "8HBA_A_decoys",
+        "tm_gain": -0.000899999999999998,
+        "rmsd_reduction": -0.02041666666666664
+      },
+      {
+        "rna_id": "8QO5_4_A_decoys",
+        "tm_gain": -0.0031208333333333387,
+        "rmsd_reduction": -0.007916666666666647
+      },
+      {
+        "rna_id": "8UO6_1_B_decoys",
+        "tm_gain": -0.002041666666666666,
+        "rmsd_reduction": 0.025833333333333302
+      }
+    ],
+    "mean_tm_gain": -0.002329166666666666,
+    "mean_rmsd_reduction": -0.02083333333333333
+  },
+  "notes": [
+    "All runs use full ODE and diffusion sampling with paired seeds.",
+    "Coverage is thresholded aligned RMSD to observed unknown frames within each window.",
+    "Single-step auxiliary loss improvement does not establish full sampling quality."
+  ]
+}

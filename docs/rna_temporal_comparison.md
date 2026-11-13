@@ -25,3 +25,6 @@ The output is `comparison/comparison.json` and per-structure coverage/precision
 CSVs within the run directory. The PBS job's log is `runtime/JOB_ID/compare.log`.
 The comparison exits on missing windows, missing seed groups, or differing sample
 counts rather than silently comparing unequal datasets.
+
+The completed run’s metrics and results are archived in the
+[matched-window experiment snapshot](experiments/rna_temporal_20261029/README.md).

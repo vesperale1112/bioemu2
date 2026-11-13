@@ -1,0 +1,502 @@
+{
+  "rmsd_threshold_angstrom": 2.0,
+  "rna_results": "/scratch/csiv212/rnaconformers/flow_structure_t5/evaluation_2000/1507016.stdct-mgmt-02",
+  "bioemu_results": "/scratch/csiv212/rnaconformers/bioemu2_rna_20261029/runs/1507807.stdct-mgmt-02",
+  "methods": {
+    "bioemu2": {
+      "quality": {
+        "rna_count": 10,
+        "row_count": 240,
+        "mean": {
+          "tm_reference_normalized": 0.41056458333333334,
+          "rmsd": 4.004166666666666,
+          "severe_nonlocal_overlap_atom_fraction": 0.00019982929018925343
+        },
+        "per_rna": {
+          "3E5C_1_A_decoys": {
+            "tm_reference_normalized": 0.3368583333333333,
+            "rmsd": 3.5175,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "3OWI_1_A_decoys": {
+            "tm_reference_normalized": 0.428325,
+            "rmsd": 3.5595833333333333,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "4JF2_1_A_decoys": {
+            "tm_reference_normalized": 0.4943375,
+            "rmsd": 3.37625,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "5C7W_C_decoys": {
+            "tm_reference_normalized": 0.3085541666666667,
+            "rmsd": 4.303333333333334,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "6R47_A_decoys": {
+            "tm_reference_normalized": 0.5267541666666666,
+            "rmsd": 2.23125,
+            "severe_nonlocal_overlap_atom_fraction": 7.839448102853559e-05
+          },
+          "6WLQ_3_A_decoys": {
+            "tm_reference_normalized": 0.45108333333333334,
+            "rmsd": 4.621666666666667,
+            "severe_nonlocal_overlap_atom_fraction": 0.0004088173731030874
+          },
+          "7UR5_A_decoys": {
+            "tm_reference_normalized": 0.39010833333333333,
+            "rmsd": 4.473333333333334,
+            "severe_nonlocal_overlap_atom_fraction": 0.0004168860803931894
+          },
+          "8HBA_A_decoys": {
+            "tm_reference_normalized": 0.36115833333333336,
+            "rmsd": 3.48,
+            "severe_nonlocal_overlap_atom_fraction": 0.0006586245146977261
+          },
+          "8QO5_4_A_decoys": {
+            "tm_reference_normalized": 0.3628166666666667,
+            "rmsd": 5.412083333333333,
+            "severe_nonlocal_overlap_atom_fraction": 0.0004065040650406504
+          },
+          "8UO6_1_B_decoys": {
+            "tm_reference_normalized": 0.44565,
+            "rmsd": 5.066666666666666,
+            "severe_nonlocal_overlap_atom_fraction": 2.9066387629345423e-05
+          }
+        }
+      },
+      "coverage": {
+        "rna_count": 10,
+        "row_count": 120,
+        "mean": {
+          "covered": 0.04166666666666667,
+          "nearest_rmsd": 3.6449166666666666
+        },
+        "per_rna": {
+          "3E5C_1_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 3.3158333333333334
+          },
+          "3OWI_1_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 3.3425
+          },
+          "4JF2_1_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 3.0716666666666668
+          },
+          "5C7W_C_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 3.9416666666666664
+          },
+          "6R47_A_decoys": {
+            "covered": 0.4166666666666667,
+            "nearest_rmsd": 1.9508333333333334
+          },
+          "6WLQ_3_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 4.235833333333334
+          },
+          "7UR5_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 4.168333333333333
+          },
+          "8HBA_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 3.0741666666666667
+          },
+          "8QO5_4_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 4.8533333333333335
+          },
+          "8UO6_1_B_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 4.495
+          }
+        }
+      },
+      "precision": {
+        "rna_count": 10,
+        "row_count": 240,
+        "mean": {
+          "within_reference_set": 0.0625,
+          "nearest_rmsd": 3.6502499999999998
+        },
+        "per_rna": {
+          "3E5C_1_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 3.15625
+          },
+          "3OWI_1_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 3.25375
+          },
+          "4JF2_1_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 3.10125
+          },
+          "5C7W_C_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 4.007916666666667
+          },
+          "6R47_A_decoys": {
+            "within_reference_set": 0.625,
+            "nearest_rmsd": 1.9483333333333333
+          },
+          "6WLQ_3_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 4.39
+          },
+          "7UR5_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 3.819166666666667
+          },
+          "8HBA_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 3.15625
+          },
+          "8QO5_4_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 5.104583333333333
+          },
+          "8UO6_1_B_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 4.565
+          }
+        }
+      }
+    },
+    "pure_fm": {
+      "quality": {
+        "rna_count": 10,
+        "row_count": 240,
+        "mean": {
+          "tm_reference_normalized": 0.44277791666666666,
+          "rmsd": 3.9027916666666664,
+          "severe_nonlocal_overlap_atom_fraction": 5.166356762250265e-06
+        },
+        "per_rna": {
+          "3E5C_1_A_decoys": {
+            "tm_reference_normalized": 0.3282333333333333,
+            "rmsd": 3.5454166666666667,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "3OWI_1_A_decoys": {
+            "tm_reference_normalized": 0.41130833333333333,
+            "rmsd": 3.7275,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "4JF2_1_A_decoys": {
+            "tm_reference_normalized": 0.5197625,
+            "rmsd": 3.30375,
+            "severe_nonlocal_overlap_atom_fraction": 5.166356762250265e-05
+          },
+          "5C7W_C_decoys": {
+            "tm_reference_normalized": 0.3227375,
+            "rmsd": 4.36125,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "6R47_A_decoys": {
+            "tm_reference_normalized": 0.6502125,
+            "rmsd": 1.7920833333333333,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "6WLQ_3_A_decoys": {
+            "tm_reference_normalized": 0.4598875,
+            "rmsd": 4.55375,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "7UR5_A_decoys": {
+            "tm_reference_normalized": 0.40722916666666664,
+            "rmsd": 4.38875,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "8HBA_A_decoys": {
+            "tm_reference_normalized": 0.5396458333333334,
+            "rmsd": 2.965,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "8QO5_4_A_decoys": {
+            "tm_reference_normalized": 0.36110416666666667,
+            "rmsd": 5.545416666666666,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "8UO6_1_B_decoys": {
+            "tm_reference_normalized": 0.4276583333333333,
+            "rmsd": 4.845,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          }
+        }
+      },
+      "coverage": {
+        "rna_count": 10,
+        "row_count": 120,
+        "mean": {
+          "covered": 0.075,
+          "nearest_rmsd": 3.6794166666666666
+        },
+        "per_rna": {
+          "3E5C_1_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 3.33
+          },
+          "3OWI_1_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 3.4941666666666666
+          },
+          "4JF2_1_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 3.1133333333333333
+          },
+          "5C7W_C_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 4.1175
+          },
+          "6R47_A_decoys": {
+            "covered": 0.75,
+            "nearest_rmsd": 1.5916666666666666
+          },
+          "6WLQ_3_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 4.383333333333334
+          },
+          "7UR5_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 4.185833333333333
+          },
+          "8HBA_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 2.7925
+          },
+          "8QO5_4_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 5.2775
+          },
+          "8UO6_1_B_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 4.508333333333333
+          }
+        }
+      },
+      "precision": {
+        "rna_count": 10,
+        "row_count": 240,
+        "mean": {
+          "within_reference_set": 0.1,
+          "nearest_rmsd": 3.4774166666666666
+        },
+        "per_rna": {
+          "3E5C_1_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 3.0616666666666665
+          },
+          "3OWI_1_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 3.4595833333333332
+          },
+          "4JF2_1_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 2.9925
+          },
+          "5C7W_C_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 4.1033333333333335
+          },
+          "6R47_A_decoys": {
+            "within_reference_set": 1.0,
+            "nearest_rmsd": 1.415
+          },
+          "6WLQ_3_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 4.21375
+          },
+          "7UR5_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 3.5945833333333335
+          },
+          "8HBA_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 2.4404166666666667
+          },
+          "8QO5_4_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 5.26875
+          },
+          "8UO6_1_B_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 4.224583333333333
+          }
+        }
+      }
+    },
+    "fm_structure": {
+      "quality": {
+        "rna_count": 10,
+        "row_count": 240,
+        "mean": {
+          "tm_reference_normalized": 0.44044875,
+          "rmsd": 3.923625,
+          "severe_nonlocal_overlap_atom_fraction": 1.033271352450053e-05
+        },
+        "per_rna": {
+          "3E5C_1_A_decoys": {
+            "tm_reference_normalized": 0.3248916666666667,
+            "rmsd": 3.5370833333333334,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "3OWI_1_A_decoys": {
+            "tm_reference_normalized": 0.40907083333333333,
+            "rmsd": 3.7829166666666665,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "4JF2_1_A_decoys": {
+            "tm_reference_normalized": 0.5167333333333334,
+            "rmsd": 3.3183333333333334,
+            "severe_nonlocal_overlap_atom_fraction": 0.0001033271352450053
+          },
+          "5C7W_C_decoys": {
+            "tm_reference_normalized": 0.32609583333333336,
+            "rmsd": 4.420416666666666,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "6R47_A_decoys": {
+            "tm_reference_normalized": 0.643575,
+            "rmsd": 1.8383333333333334,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "6WLQ_3_A_decoys": {
+            "tm_reference_normalized": 0.45642083333333333,
+            "rmsd": 4.58375,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "7UR5_A_decoys": {
+            "tm_reference_normalized": 0.4053541666666667,
+            "rmsd": 4.3975,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "8HBA_A_decoys": {
+            "tm_reference_normalized": 0.5387458333333334,
+            "rmsd": 2.9854166666666666,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "8QO5_4_A_decoys": {
+            "tm_reference_normalized": 0.3579833333333333,
+            "rmsd": 5.553333333333334,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          },
+          "8UO6_1_B_decoys": {
+            "tm_reference_normalized": 0.42561666666666664,
+            "rmsd": 4.819166666666667,
+            "severe_nonlocal_overlap_atom_fraction": 0.0
+          }
+        }
+      },
+      "coverage": {
+        "rna_count": 10,
+        "row_count": 120,
+        "mean": {
+          "covered": 0.075,
+          "nearest_rmsd": 3.674166666666667
+        },
+        "per_rna": {
+          "3E5C_1_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 3.339166666666667
+          },
+          "3OWI_1_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 3.4808333333333334
+          },
+          "4JF2_1_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 3.1241666666666665
+          },
+          "5C7W_C_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 4.098333333333334
+          },
+          "6R47_A_decoys": {
+            "covered": 0.75,
+            "nearest_rmsd": 1.6175
+          },
+          "6WLQ_3_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 4.375
+          },
+          "7UR5_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 4.16
+          },
+          "8HBA_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 2.775
+          },
+          "8QO5_4_A_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 5.27
+          },
+          "8UO6_1_B_decoys": {
+            "covered": 0.0,
+            "nearest_rmsd": 4.501666666666667
+          }
+        }
+      },
+      "precision": {
+        "rna_count": 10,
+        "row_count": 240,
+        "mean": {
+          "within_reference_set": 0.1,
+          "nearest_rmsd": 3.4752916666666667
+        },
+        "per_rna": {
+          "3E5C_1_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 3.078333333333333
+          },
+          "3OWI_1_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 3.42
+          },
+          "4JF2_1_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 2.9695833333333335
+          },
+          "5C7W_C_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 4.087916666666667
+          },
+          "6R47_A_decoys": {
+            "within_reference_set": 1.0,
+            "nearest_rmsd": 1.44125
+          },
+          "6WLQ_3_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 4.26
+          },
+          "7UR5_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 3.6525
+          },
+          "8HBA_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 2.4208333333333334
+          },
+          "8QO5_4_A_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 5.235
+          },
+          "8UO6_1_B_decoys": {
+            "within_reference_set": 0.0,
+            "nearest_rmsd": 4.1875
+          }
+        }
+      }
+    }
+  },
+  "notes": [
+    "Each seed group has the same number of samples per window; groups are not pooled for coverage.",
+    "BioEmu2 uses actual first-frame coordinates and samples independent endpoints; RNAConformer uses first-frame embeddings.",
+    "The 0.1\u20130.4 ns BioEmu2 lags are below its recommended training range.",
+    "USalign RMSD is the alignment RMSD, and coverage is limited to these observed window frames."
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "definition": "RMSD in angstroms after optimal rigid Kabsch superposition of every corresponding C3-prime atom, matched in the original residue sequence order. This is distinct from the local structural-alignment RMSD reported by USalign.",
+  "reference_check": "240 reference-file SHA256 comparisons across both RNAConformer models and all seed groups matched the BioEmu2 references.",
+  "self_test": "Rigid rotation and translation recover RMSD 1.66e-15 angstrom.",
+  "methods": {
+    "bioemu2": {
+      "n": 240,
+      "mean": 6.310133698451504,
+      "per_rna": {
+        "3E5C_1_A_decoys": 4.91865316329507,
+        "3OWI_1_A_decoys": 7.052929815046846,
+        "4JF2_1_A_decoys": 4.697592930810997,
+        "5C7W_C_decoys": 6.4365899187960895,
+        "6R47_A_decoys": 4.143584832666981,
+        "6WLQ_3_A_decoys": 6.999246129067994,
+        "7UR5_A_decoys": 6.851563451272012,
+        "8HBA_A_decoys": 4.593766097073726,
+        "8QO5_4_A_decoys": 10.061246811880737,
+        "8UO6_1_B_decoys": 7.346163834604584
+      },
+      "per_time": {
+        "100": 5.034285987777814,
+        "200": 6.40207777599491,
+        "300": 6.812477560437674,
+        "400": 6.991693469595617
+      }
+    },
+    "pure_fm": {
+      "n": 240,
+      "mean": 6.143070436328618,
+      "per_rna": {
+        "3E5C_1_A_decoys": 4.860826923836623,
+        "3OWI_1_A_decoys": 6.855997692233931,
+        "4JF2_1_A_decoys": 5.051841364387213,
+        "5C7W_C_decoys": 6.0348978011926055,
+        "6R47_A_decoys": 3.8487100142894044,
+        "6WLQ_3_A_decoys": 6.947208056055871,
+        "7UR5_A_decoys": 6.400547988297835,
+        "8HBA_A_decoys": 4.044020960087892,
+        "8QO5_4_A_decoys": 9.838315433661434,
+        "8UO6_1_B_decoys": 7.548338129243373
+      },
+      "per_time": {
+        "100": 4.895559764632918,
+        "200": 6.200871810246703,
+        "300": 6.752731087211058,
+        "400": 6.723119083223794
+      }
+    },
+    "fm_structure": {
+      "n": 240,
+      "mean": 6.19147892519631,
+      "per_rna": {
+        "3E5C_1_A_decoys": 4.868791255354943,
+        "3OWI_1_A_decoys": 6.888342295722041,
+        "4JF2_1_A_decoys": 5.1147342998349785,
+        "5C7W_C_decoys": 6.027499976430334,
+        "6R47_A_decoys": 4.017782054452953,
+        "6WLQ_3_A_decoys": 7.012117271119233,
+        "7UR5_A_decoys": 6.385713147372616,
+        "8HBA_A_decoys": 4.043481884397865,
+        "8QO5_4_A_decoys": 9.945158253494427,
+        "8UO6_1_B_decoys": 7.611168813783708
+      },
+      "per_time": {
+        "100": 4.9308086661473665,
+        "200": 6.2499185893382325,
+        "300": 6.8057161211899935,
+        "400": 6.779472324109648
+      }
+    },
+    "first_frame": {
+      "n": 40,
+      "mean": 6.328124298597207,
+      "per_rna": {
+        "3E5C_1_A_decoys": 4.99339353681111,
+        "3OWI_1_A_decoys": 6.989568099065114,
+        "4JF2_1_A_decoys": 5.2473779731953085,
+        "5C7W_C_decoys": 6.26007834526556,
+        "6R47_A_decoys": 3.857928964041474,
+        "6WLQ_3_A_decoys": 7.122134676640966,
+        "7UR5_A_decoys": 6.70690257144796,
+        "8HBA_A_decoys": 4.056196434907912,
+        "8QO5_4_A_decoys": 10.277532844641694,
+        "8UO6_1_B_decoys": 7.770129539954972
+      },
+      "per_time": {
+        "100": 5.0961201310615705,
+        "200": 6.351177861757651,
+        "300": 6.947448380319502,
+        "400": 6.917750821250106
+      }
+    }
+  }
+}

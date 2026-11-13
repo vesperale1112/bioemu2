@@ -1,0 +1,13 @@
+{
+  "num_windows": 10,
+  "num_samples": 240,
+  "bioemu2": {
+    "tm_reference_normalized": 0.4105645833333334,
+    "rmsd": 4.004166666666667
+  },
+  "first_frame_baseline": {
+    "tm_reference_normalized": 0.4408925,
+    "rmsd": 3.8242499999999993
+  },
+  "notes": "Independent endpoints from the same true first frame; short lags are outside the recommended 1\u20131000 ns."
+}
